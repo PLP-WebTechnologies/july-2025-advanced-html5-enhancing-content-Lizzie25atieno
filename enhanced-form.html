@@ -7,101 +7,21 @@
     <meta name="keywords" content="input types, labels, fieldsets, and HTML validation rules">
     <meta name="author" content="Elizabeth Atieno">
     <title>Enhanced HTML Form</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: aliceblue;
-        }
-        header, main {
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #1c8699; 
-            text-align: center; 
-            padding: 10px; 
-            margin-top: 15px;
-        }
-        h1, h2 {
-            color: black;
-            text-align: left;  
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table, th, td {
-            border: 1px solid #000000;
-            text-align: left;
-            padding: 8px;
-        }
-        th {
-            background-color: #eee;
-        }
-        caption {
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 8px;
-            background-color: #f2f2f2;
-            padding: 5px;
-        }
-        form {
-            margin-top: 15px;
-        }
-        fieldset {
-            border: 1px solid #000000;
-            padding: 15px;
-            margin-bottom: 15px;
-        }
-        legend {
-            font-weight: bold;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input, select, textarea, button {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-        }
-        button {
-            background-color: #268d8d;
-            text-align: center;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        button:hover {
-            background-color: #1f6f6f;
-        }
-        img, video, audio {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-    </style>  
 </head>
 
 <body>
     <header>
         <h1>Enhancing HTML5 Content & Mastering HTML Forms</h1>
-        <p>This page Morning routine gude page demonstrates how to combine structured, engaging HTML5 content with well-designed, accessible forms. By using lists, tables, and media, alongside native HTML5 validation features, we can create pages that are both informative and user-friendly without relying on JavaScript.</p>
+        <p>This page Morning routine guide page demonstrates how to combine structured, engaging HTML5 content with well-designed, accessible forms. By using lists, tables, and media, alongside native HTML5 validation features, we can create pages that are both informative and user-friendly without relying on JavaScript.</p>
     </header>
 
     <main>
-        <!--Section 1: Lists-->
+        <!-- Section 1: Lists -->
         <section>
             <h2>A Healthy Morning Routine for More Energy</h2> 
             <p>Starting your day with the right habits can boost your mood, focus, and overall productivity. Here's a simple structure for a healthy and energizing morning:</p>
             <h3>Steps to Follow:</h3>
-            <ul style="list-style-type: square;">
+            <ul>
                 <li>Wake up early to give yourself unhurried time.</li>
                 <li>Drink a glass of warm water to rehydrate.</li>
                 <li>Spend 5–10 minutes stretching or doing light exercise.</li>
@@ -116,12 +36,13 @@
                 <li>Enjoy a quick walk in fresh air.</li>
             </ol>
         </section>
+        <br>
 
-        <!--Section 2: Tables-->
+        <!-- Section 2: Tables -->
         <section>
             <h2>Morning Routine Plan</h2>
             <p>This table outlines a suggested schedule for an energizing and productive morning routine.</p>
-            <table>
+            <table border="1" cellpadding="10" cellspacing="5">
                 <caption>Morning Routine Schedule</caption>
                 <thead>
                     <tr>
@@ -154,8 +75,9 @@
                 </tbody>
             </table>
         </section>  
+        <br>
 
-        <!--Section 3: Multimedia-->  
+        <!-- Section 3: Multimedia -->  
         <section>
             <h2>Embedded Media</h2>
             <h3>Workout Images</h3>
@@ -170,63 +92,75 @@
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" type="audio/mpeg">
             </audio>
         </section>
+        <br>
 
-        <!--Section 4: Forms-->
+        <!-- Section 4: Forms -->
         <section>
             <h2>Share Your Morning Routine</h2>
             <form action="#" method="post" autocomplete="on">
+
+                <!-- Personal Details -->
                 <fieldset>
-                    <legend>Morning Routine Feedback</legend>
+                    <legend>Personal Details</legend>
 
-                    <label for="Fname">First Name:</label>
-                    <input type="text" id="Fname" name="Fname" placeholder="Enter First Name" required>
+                    <label for="Fname">First Name:</label><br>
+                    <input type="text" id="Fname" name="Fname" placeholder="Enter First Name" required><br><br>
 
-                    <label for="Lname">Last Name:</label>
-                    <input type="text" id="Lname" name="Lname" placeholder="Enter Last Name" required>
+                    <label for="Lname">Last Name:</label><br>
+                    <input type="text" id="Lname" name="Lname" placeholder="Enter Last Name" required><br><br>
 
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="you@domain.com" autocomplete="off" required>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@domain.com" autocomplete="off" required><br><br>
 
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="0700-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="0700-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br><br>
 
-                    <label for="time">Wake Up Time:</label>
+                    <label for="time">Wake Up Time:</label><br>
                     <input type="time" id="time" name="time" required>
                 </fieldset>
-                 
+
+                <br><br>
+
+                <!-- Routine Preferences -->
                 <fieldset>
-                    <legend>Morning Routine Preference</legend>
-                    <label>Which healthy morning routine do you prefer?</label>
+                    <legend>Morning Routine Preferences</legend>
+
+                    <label for="routine">Which healthy morning routine do you prefer?</label><br>
                     <select id="routine" name="routine">
                         <option value="meditation">Meditation</option>
                         <option value="exercise">Exercise</option>
                         <option value="healthy-breakfast">Healthy Breakfast</option>
                         <option value="running">Running</option>
                         <option value="reading">Reading</option>
-                    </select>
-               
-                    <label>Do you drink water right after waking up?</label>
-                    <input type="radio" id="yes" name="water" value="yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="water" value="no">
-                    <label for="no">No</label>
-                 
-                    <label for="tip">Daily Tip</label>
-                    <input type="text" id="tip" name="tip" value="Drink at least one glass of water every morning" readonly>
-                </fieldset>
+                    </select><br><br>
 
+                    <label>Do you drink water right after waking up?</label><br>
+                    <input type="radio" id="yes" name="water" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="water" value="no">
+                    <label for="no">No</label><br><br>
+
+                    <label for="tip">Daily Tip</label><br>
+                    <input type="text" id="tip" name="tip" value="Drink at least one glass of water every morning" readonly>
+                </fieldset><br><br>
+
+                
+
+                <!-- Consistency Goals -->
                 <fieldset>
                     <legend>Consistency Goals</legend>
-                    <label>What would you like to do to become more consistent?</label>
-                    <textarea id="goal" name="goal" placeholder="Share your comments..." rows="10" cols="40" required minlength="10" maxlength="500"></textarea>
 
-                    <label for="feedback">Any suggestions for a healthier morning?</label>
-                    <textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="Your thoughts..."></textarea>
+                    <label for="goal">What would you like to do to become more consistent?</label><br>
+                    <textarea id="goal" name="goal" placeholder="Share your comments..." rows="15" cols="40" required minlength="10" maxlength="500"></textarea><br><br>
 
-                    <label>Subcribe to email reminders for workout:</label>
-                    <input type="checkbox" name="Subscribe" value="Yes">
+                    <label for="feedback">Any suggestions for a healthier morning?</label><br>
+                    <textarea id="feedback" name="feedback" rows="10" cols="40" placeholder="Your thoughts..."></textarea><br><br>
+
+                    <input type="checkbox" name="Subscribe" value="Yes" id="subscribe">
+                    <label for="subscribe">Subscribe to email reminders for workout</label>
                 </fieldset>
 
+                <br>
                 <button type="submit">Submit</button>
             </form>
         </section>
